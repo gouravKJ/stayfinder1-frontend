@@ -78,4 +78,47 @@ body {
 .f{
     color:#ffc300;
 }
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #006d77;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    display: none;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a,
+  .logout-btn,
+  .navbar-links Link {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .logout-btn {
+    width: 100%;
+  }
+}
+
 
