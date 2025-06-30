@@ -1,108 +1,38 @@
-stayfinder/
-├── backend/
-│   ├── index.js
-│   ├── models/
-│   │   └── Listing.js
-│   ├── routes/
-│   │   └── listingRoutes.js
-│   ├── .env.template
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── Navbar.jsx
-│   │   ├── pages/
-│   │   │   ├── Home.jsx
-│   │   │   ├── Bookings.jsx
-│   │   │   ├── Login.jsx
-│   │   │   └── Register.jsx
-│   │   ├── App.jsx
-│   │   └── index.js
-│   ├── .env.template
-│   └── package.json
-├── README.md
-└── .gitignore
-
 # StayFinder 🏡
 
-**StayFinder** is a full-stack MERN application for discovering and booking verified stays. It includes user login, admin-uploaded listings, and a responsive design.
-
-## 🚀 Tech Stack
-
-| Frontend        | Backend           | Database | Auth  | Deploy |
-|----------------|-------------------|----------|-------|--------|
-| React, CSS     | Node.js, Express  | MongoDB  | JWT   | Vercel + Render |
+**StayFinder** is a full-stack MERN application to discover and book verified stays across India. Users can view listings without login, register/login to book properties, and view their bookings. All listings are uploaded manually by the admin through a secure admin panel.
 
 ---
 
-## 🔧 Features
+## 🔗 Live Demo
 
-- 🌐 View all listings
-- 🔒 Register / Login / Logout
-- 📑 Book listings (only if logged in)
-- 🧑 Admin panel to upload properties
-- 📱 Clean UI with responsive layout (in progress)
+- 🌐 **Frontend**: [https://stayfinder1-frontend.vercel.app](https://stayfinder1-frontend.vercel.app)  
+- 🔙 **Backend**: [https://stayfinder-backend-knzo.onrender.com](https://stayfinder-backend-knzo.onrender.com)
 
 ---
 
-## 🛠️ Installation
+## 📦 GitHub Repository
 
-### Clone the Repository
+- 📁 **Repo**: [https://github.com/gouravKJ/stayfinder](https://github.com/gouravKJ/stayfinder)
+- 👤 **Author**: [Gourav Kumar Jaiswal](https://github.com/gouravKJ)
 
-```bash
-git clone https://github.com/yourusername/stayfinder.git
-cd stayfinder
-Setup Backend
-bash
-Copy
-Edit
-cd backend
-npm install
-cp .env.template .env  # Then fill in MONGO_URI and JWT_SECRET
-npm run dev
+---
 
-Setup Frontend
-bash
-Copy
-Edit
-cd frontend
-npm install
-cp .env.template .env  # Then set VITE_API_URL=http://localhost:10000
-npm start
+## 🛠 Tech Stack
 
-📁 Environment Variables
-backend/.env
-env
-Copy
-Edit
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-frontend/.env
-env
-Copy
-Edit
-VITE_API_URL=http://localhost:10000
+- **Frontend**: React, React Router, CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (Atlas)
+- **Authentication**: JWT
+- **Image Upload**: Multer
+- **Deployment**: Vercel (frontend) + Render (backend)
 
-📦 Deployment
-Frontend: Deployed on Vercel
+---
 
-Backend: Deployed on Render
+## ✨ Features
 
-Connect MongoDB Atlas in production
-
-💡 Future Improvements
-Mobile responsive navbar
-
-Payment gateway (Razorpay)
-
-Admin dashboard analytics
-
-Google Maps integration
-
-Full SEO optimization
-
-🧑‍💻 Author
-Gourav Kumar Jaiswal
-
+- 🔍 View property listings
+- 🔐 User login/register with JWT
+- 📑 Book properties after login
+- 📂 Admin panel to upload/edit listings
+- 📱 Responsive UI (in progress)
