@@ -13,7 +13,7 @@
 
 ## 📦 GitHub Repository
 
-- 📁 **Repo**: [https://github.com/gouravKJ/stayfinder](https://github.com/gouravKJ/stayfinder)
+- 📁 **Repo**: [https://github.com/gouravKJ/stayfinder](https://github.com/gouravKJ/stayfinder1-frontend.git)
 - 👤 **Author**: [Gourav Kumar Jaiswal](https://github.com/gouravKJ)
 
 ---
