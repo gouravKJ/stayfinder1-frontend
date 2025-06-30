@@ -1,74 +1,108 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+stayfinder/
+├── backend/
+│   ├── index.js
+│   ├── models/
+│   │   └── Listing.js
+│   ├── routes/
+│   │   └── listingRoutes.js
+│   ├── .env.template
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── Navbar.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Bookings.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   ├── App.jsx
+│   │   └── index.js
+│   ├── .env.template
+│   └── package.json
+├── README.md
+└── .gitignore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# StayFinder 🏡
 
-## Available Scripts
+**StayFinder** is a full-stack MERN application for discovering and booking verified stays. It includes user login, admin-uploaded listings, and a responsive design.
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+| Frontend        | Backend           | Database | Auth  | Deploy |
+|----------------|-------------------|----------|-------|--------|
+| React, CSS     | Node.js, Express  | MongoDB  | JWT   | Vercel + Render |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔧 Features
 
-### `npm test`
+- 🌐 View all listings
+- 🔒 Register / Login / Logout
+- 📑 Book listings (only if logged in)
+- 🧑 Admin panel to upload properties
+- 📱 Clean UI with responsive layout (in progress)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/yourusername/stayfinder.git
+cd stayfinder
+Setup Backend
+bash
+Copy
+Edit
+cd backend
+npm install
+cp .env.template .env  # Then fill in MONGO_URI and JWT_SECRET
+npm run dev
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Setup Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+cp .env.template .env  # Then set VITE_API_URL=http://localhost:10000
+npm start
 
-### `npm run eject`
+📁 Environment Variables
+backend/.env
+env
+Copy
+Edit
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+frontend/.env
+env
+Copy
+Edit
+VITE_API_URL=http://localhost:10000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📦 Deployment
+Frontend: Deployed on Vercel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Backend: Deployed on Render
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Connect MongoDB Atlas in production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+💡 Future Improvements
+Mobile responsive navbar
 
-## Learn More
+Payment gateway (Razorpay)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Admin dashboard analytics
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Google Maps integration
 
-### Code Splitting
+Full SEO optimization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🧑‍💻 Author
+Gourav Kumar Jaiswal
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# stayfinder-frontend
->>>>>>> 3425b742eb860563f7f268ebe6806c3d9aa26a52
